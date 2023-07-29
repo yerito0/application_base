@@ -11,6 +11,7 @@ class ConfigScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('config');
     return Scaffold(
       appBar: AppBar(
         title: const Text('Config'),

@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 class DashboardScreenController extends ChangeNotifier {
   int _index = 0;
+  List<String> rotues = ['/a', '/b'];
 
   int get index => _index;
   set index(int value) {
@@ -21,6 +22,11 @@ class DashboardScreenController extends ChangeNotifier {
       // using the initialLocation parameter of goBranch.
       initialLocation: index == navigationShell.currentIndex,
     );
+    _index = index;
+    notifyListeners();
+  }
+
+  void goBranchShell(int index) {
     _index = index;
     notifyListeners();
   }

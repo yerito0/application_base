@@ -9,7 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: goRouter,
+      //Cmabiar routerConfig entre
+      //goRouterShell y goRouter
+
+      //goRouterShell representa una navegacion anidada con ShellRouter
+      //goRouter representa una navegacion anidada con statefulShellRouter
+      //routerConfig: goRouter,
+      routerConfig: goRouterShell,
     );
   }
 }
